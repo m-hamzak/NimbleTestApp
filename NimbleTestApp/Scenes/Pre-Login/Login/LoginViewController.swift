@@ -9,14 +9,25 @@ import UIKit
 
 class LoginViewController: BaseViewController {
 
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: TranslucentTextField!
+    @IBOutlet weak var passwordTextField: TranslucentTextField!
+    @IBOutlet weak var loginButton: DefaultButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupView()
+        setupData()
     }
     
+    func setupView(){
+        
+    }
+    
+    func setupData(){
+        
+    }
 
     @IBAction func didTapForgetPassword(_ sender: Any) {
         
@@ -33,7 +44,6 @@ class LoginViewController: BaseViewController {
         self.present(vc, animated: true, completion: nil)
         
     }
-    
     
 }
 

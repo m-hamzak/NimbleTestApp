@@ -22,6 +22,11 @@
 		813AE05227F476E800BC104A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE05127F476E800BC104A /* HomeViewController.swift */; };
 		813AE05427F4770700BC104A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE05327F4770700BC104A /* HomeViewModel.swift */; };
 		813AE05927F48FB400BC104A /* StoryboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE05827F48FB400BC104A /* StoryboardHandler.swift */; };
+		81B212EB286EFC19003199D3 /* PreLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B212EA286EFC19003199D3 /* PreLogin.storyboard */; };
+		81B212EE286F280A003199D3 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B212ED286F280A003199D3 /* DefaultButton.swift */; };
+		81B212F2286F288C003199D3 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B212F1286F288C003199D3 /* Palette.swift */; };
+		81B212F4286F2913003199D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B212F3286F2913003199D3 /* Constants.swift */; };
+		81B212F6286F3445003199D3 /* TranslucentTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B212F5286F3445003199D3 /* TranslucentTextField.swift */; };
 		B1517D402540F61A1E847846 /* Pods_NimbleTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA879986F54D764B379630B /* Pods_NimbleTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +50,11 @@
 		813AE05127F476E800BC104A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		813AE05327F4770700BC104A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		813AE05827F48FB400BC104A /* StoryboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardHandler.swift; sourceTree = "<group>"; };
+		81B212EA286EFC19003199D3 /* PreLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PreLogin.storyboard; sourceTree = "<group>"; };
+		81B212ED286F280A003199D3 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		81B212F1286F288C003199D3 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		81B212F3286F2913003199D3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		81B212F5286F3445003199D3 /* TranslucentTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslucentTextField.swift; sourceTree = "<group>"; };
 		8EA879986F54D764B379630B /* Pods_NimbleTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C0C2036747E27BC0CF57A3 /* Pods-NimbleTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NimbleTestApp.debug.xcconfig"; path = "Target Support Files/Pods-NimbleTestApp/Pods-NimbleTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A618CDC727A4E15D1D7759BD /* Pods-NimbleTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NimbleTestApp.release.xcconfig"; path = "Target Support Files/Pods-NimbleTestApp/Pods-NimbleTestApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,7 +109,7 @@
 				813AE03C27F46A0F00BC104A /* Database */,
 				813AE03B27F46A0400BC104A /* Network */,
 				813AE03A27F469FE00BC104A /* Model */,
-				813AE03927F469E400BC104A /* Helper */,
+				81B212EF286F2856003199D3 /* Extra */,
 				813AE02C27F4622100BC104A /* Assets.xcassets */,
 				813AE03127F4622100BC104A /* Info.plist */,
 			);
@@ -109,6 +119,7 @@
 		813AE03727F4690200BC104A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				813AE04227F46AD400BC104A /* Base Classes */,
 				813AE05027F476D300BC104A /* Home */,
 				813AE04927F4765300BC104A /* Pre-Login */,
 			);
@@ -127,10 +138,10 @@
 		813AE03927F469E400BC104A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				813AE04227F46AD400BC104A /* Base Classes */,
 				813AE02327F4622000BC104A /* AppDelegate.swift */,
 				813AE02527F4622000BC104A /* SceneDelegate.swift */,
 				813AE05827F48FB400BC104A /* StoryboardHandler.swift */,
+				81B212F3286F2913003199D3 /* Constants.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -159,6 +170,7 @@
 		813AE03D27F46A2500BC104A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				81B212EC286F27F1003199D3 /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +180,7 @@
 			children = (
 				813AE02927F4622000BC104A /* Main.storyboard */,
 				813AE02E27F4622100BC104A /* LaunchScreen.storyboard */,
+				81B212EA286EFC19003199D3 /* PreLogin.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -216,6 +229,32 @@
 				813AE05327F4770700BC104A /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		81B212EC286F27F1003199D3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				81B212ED286F280A003199D3 /* DefaultButton.swift */,
+				81B212F5286F3445003199D3 /* TranslucentTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		81B212EF286F2856003199D3 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				81B212F0286F287F003199D3 /* Extension */,
+				813AE03927F469E400BC104A /* Helper */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		81B212F0286F287F003199D3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				81B212F1286F288C003199D3 /* Palette.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		D4DCA6AF33D03A99B9E267CC /* Frameworks */ = {
@@ -288,6 +327,7 @@
 			files = (
 				813AE03027F4622100BC104A /* LaunchScreen.storyboard in Resources */,
 				813AE02D27F4622100BC104A /* Assets.xcassets in Resources */,
+				81B212EB286EFC19003199D3 /* PreLogin.storyboard in Resources */,
 				813AE02B27F4622000BC104A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,9 +382,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				813AE04127F46AB200BC104A /* LoginViewModel.swift in Sources */,
+				81B212F6286F3445003199D3 /* TranslucentTextField.swift in Sources */,
 				813AE05927F48FB400BC104A /* StoryboardHandler.swift in Sources */,
+				81B212EE286F280A003199D3 /* DefaultButton.swift in Sources */,
 				813AE05427F4770700BC104A /* HomeViewModel.swift in Sources */,
 				813AE04F27F476C100BC104A /* ForgetPasswordViewModel.swift in Sources */,
+				81B212F4286F2913003199D3 /* Constants.swift in Sources */,
 				813AE04827F46F7500BC104A /* BaseNavigationController.swift in Sources */,
 				813AE04427F46AEA00BC104A /* BaseViewModel.swift in Sources */,
 				813AE02827F4622000BC104A /* LoginViewController.swift in Sources */,
@@ -353,6 +396,7 @@
 				813AE02627F4622000BC104A /* SceneDelegate.swift in Sources */,
 				813AE04C27F4768600BC104A /* ForgetPasswordViewController.swift in Sources */,
 				813AE04627F46B1100BC104A /* BaseViewController.swift in Sources */,
+				81B212F2286F288C003199D3 /* Palette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

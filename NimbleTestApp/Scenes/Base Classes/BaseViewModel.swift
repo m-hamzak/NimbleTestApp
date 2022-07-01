@@ -24,10 +24,8 @@ extension BaseViewModelDelegate{
     
     func showProgress(view: UIView, message:String?){
         hideProgress()
-      //  ABProgressHUD.showProgress(forView: view, withMessage: message)
     }
     
     func hideProgress(){
-     //   ABProgressHUD.hideProgress()
     }
 }
