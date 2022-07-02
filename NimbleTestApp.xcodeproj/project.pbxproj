@@ -22,6 +22,8 @@
 		813AE05227F476E800BC104A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE05127F476E800BC104A /* HomeViewController.swift */; };
 		813AE05427F4770700BC104A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE05327F4770700BC104A /* HomeViewModel.swift */; };
 		813AE05927F48FB400BC104A /* StoryboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE05827F48FB400BC104A /* StoryboardHandler.swift */; };
+		818A0DA72870460300807668 /* SurveyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818A0DA62870460300807668 /* SurveyView.xib */; };
+		818A0DA92870462900807668 /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A0DA82870462900807668 /* SurveyView.swift */; };
 		81B212EB286EFC19003199D3 /* PreLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B212EA286EFC19003199D3 /* PreLogin.storyboard */; };
 		81B212EE286F280A003199D3 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B212ED286F280A003199D3 /* DefaultButton.swift */; };
 		81B212F2286F288C003199D3 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B212F1286F288C003199D3 /* Palette.swift */; };
@@ -50,6 +52,8 @@
 		813AE05127F476E800BC104A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		813AE05327F4770700BC104A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		813AE05827F48FB400BC104A /* StoryboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardHandler.swift; sourceTree = "<group>"; };
+		818A0DA62870460300807668 /* SurveyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyView.xib; sourceTree = "<group>"; };
+		818A0DA82870462900807668 /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
 		81B212EA286EFC19003199D3 /* PreLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PreLogin.storyboard; sourceTree = "<group>"; };
 		81B212ED286F280A003199D3 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		81B212F1286F288C003199D3 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 		813AE03D27F46A2500BC104A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				818A0DA5287045E200807668 /* Xibs */,
 				81B212EC286F27F1003199D3 /* Components */,
 			);
 			path = Views;
@@ -229,6 +234,23 @@
 				813AE05327F4770700BC104A /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		818A0DA5287045E200807668 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				818A0DAA2870462D00807668 /* SurveyView */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		818A0DAA2870462D00807668 /* SurveyView */ = {
+			isa = PBXGroup;
+			children = (
+				818A0DA62870460300807668 /* SurveyView.xib */,
+				818A0DA82870462900807668 /* SurveyView.swift */,
+			);
+			path = SurveyView;
 			sourceTree = "<group>";
 		};
 		81B212EC286F27F1003199D3 /* Components */ = {
@@ -325,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				818A0DA72870460300807668 /* SurveyView.xib in Resources */,
 				813AE03027F4622100BC104A /* LaunchScreen.storyboard in Resources */,
 				813AE02D27F4622100BC104A /* Assets.xcassets in Resources */,
 				81B212EB286EFC19003199D3 /* PreLogin.storyboard in Resources */,
@@ -387,6 +410,7 @@
 				81B212EE286F280A003199D3 /* DefaultButton.swift in Sources */,
 				813AE05427F4770700BC104A /* HomeViewModel.swift in Sources */,
 				813AE04F27F476C100BC104A /* ForgetPasswordViewModel.swift in Sources */,
+				818A0DA92870462900807668 /* SurveyView.swift in Sources */,
 				81B212F4286F2913003199D3 /* Constants.swift in Sources */,
 				813AE04827F46F7500BC104A /* BaseNavigationController.swift in Sources */,
 				813AE04427F46AEA00BC104A /* BaseViewModel.swift in Sources */,
