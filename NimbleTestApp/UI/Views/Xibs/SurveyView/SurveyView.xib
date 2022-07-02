@@ -71,6 +71,9 @@
                         </label>
                     </subviews>
                 </stackView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fQX-dt-F2x">
+                    <rect key="frame" x="16" y="677.5" width="115.5" height="26"/>
+                </pageControl>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGH-HJ-0hZ">
                     <rect key="frame" x="353" y="778.5" width="45" height="45"/>
                     <subviews>
@@ -115,6 +118,7 @@
                 <constraint firstItem="fa1-ie-s1U" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" multiplier="1.7" id="AIY-YN-HKN"/>
                 <constraint firstItem="Adj-C6-9cr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JvZ-ct-o3x"/>
                 <constraint firstAttribute="bottom" secondItem="Adj-C6-9cr" secondAttribute="bottom" id="Kkw-Rc-xHd"/>
+                <constraint firstItem="fa1-ie-s1U" firstAttribute="top" secondItem="fQX-dt-F2x" secondAttribute="bottom" constant="10" id="ONj-CE-Nga"/>
                 <constraint firstItem="lp3-q7-88e" firstAttribute="centerY" secondItem="fa1-ie-s1U" secondAttribute="centerY" multiplier="1.04" id="RbI-Xg-ZJa"/>
                 <constraint firstItem="Adj-C6-9cr" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="SZw-V8-MhM"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="y2C-Kx-q7I" secondAttribute="trailing" constant="16" id="Yft-zU-ByG"/>
@@ -122,6 +126,7 @@
                 <constraint firstItem="y2C-Kx-q7I" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="cYw-fY-KwB"/>
                 <constraint firstItem="lp3-q7-88e" firstAttribute="leading" secondItem="fa1-ie-s1U" secondAttribute="trailing" constant="10" id="gWs-AN-l7q"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lp3-q7-88e" secondAttribute="trailing" constant="16" id="i8v-HM-qM2"/>
+                <constraint firstItem="fQX-dt-F2x" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="ugg-07-dxv"/>
                 <constraint firstItem="y2C-Kx-q7I" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" multiplier="0.2" id="wtJ-dC-zBK"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
