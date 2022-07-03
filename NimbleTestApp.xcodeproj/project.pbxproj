@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81061C762871ADC000B02084 /* SurveyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81061C752871ADC000B02084 /* SurveyDetailViewController.swift */; };
+		81061C782871ADE200B02084 /* SurveyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81061C772871ADE200B02084 /* SurveyDetailViewModel.swift */; };
 		813AE02427F4622000BC104A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE02327F4622000BC104A /* AppDelegate.swift */; };
 		813AE02627F4622000BC104A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE02527F4622000BC104A /* SceneDelegate.swift */; };
 		813AE02827F4622000BC104A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE02727F4622000BC104A /* LoginViewController.swift */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		503D6AB9C968E10659185CB6 /* Pods-UnitTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestApp.debug.xcconfig"; path = "Target Support Files/Pods-UnitTestApp/Pods-UnitTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6845621E9BF9817A3353632C /* Pods-UnitTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestApp.release.xcconfig"; path = "Target Support Files/Pods-UnitTestApp/Pods-UnitTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		81061C752871ADC000B02084 /* SurveyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDetailViewController.swift; sourceTree = "<group>"; };
+		81061C772871ADE200B02084 /* SurveyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDetailViewModel.swift; sourceTree = "<group>"; };
 		813AE02027F4622000BC104A /* NimbleTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimbleTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813AE02327F4622000BC104A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		813AE02527F4622000BC104A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,15 @@
 				A618CDC727A4E15D1D7759BD /* Pods-NimbleTestApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		81061C742871AD8700B02084 /* SurveyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				81061C752871ADC000B02084 /* SurveyDetailViewController.swift */,
+				81061C772871ADE200B02084 /* SurveyDetailViewModel.swift */,
+			);
+			path = SurveyDetail;
 			sourceTree = "<group>";
 		};
 		813AE01727F4622000BC104A = {
@@ -232,6 +245,7 @@
 			children = (
 				813AE05127F476E800BC104A /* HomeViewController.swift */,
 				813AE05327F4770700BC104A /* HomeViewModel.swift */,
+				81061C742871AD8700B02084 /* SurveyDetail */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -416,7 +430,9 @@
 				813AE04427F46AEA00BC104A /* BaseViewModel.swift in Sources */,
 				813AE02827F4622000BC104A /* LoginViewController.swift in Sources */,
 				813AE05227F476E800BC104A /* HomeViewController.swift in Sources */,
+				81061C762871ADC000B02084 /* SurveyDetailViewController.swift in Sources */,
 				813AE02427F4622000BC104A /* AppDelegate.swift in Sources */,
+				81061C782871ADE200B02084 /* SurveyDetailViewModel.swift in Sources */,
 				813AE02627F4622000BC104A /* SceneDelegate.swift in Sources */,
 				813AE04C27F4768600BC104A /* ForgetPasswordViewController.swift in Sources */,
 				813AE04627F46B1100BC104A /* BaseViewController.swift in Sources */,

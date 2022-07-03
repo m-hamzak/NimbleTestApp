@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JE9-hs-Bno">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="surveyCell" id="JE9-hs-Bno">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="857"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hSY-Iv-pwl">
@@ -48,13 +48,96 @@
                             <constraint firstItem="hTR-xU-KbP" firstAttribute="leading" secondItem="ERT-LC-Lma" secondAttribute="leading" id="yRj-Jc-9tE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="surveyCollectionView" destination="hTR-xU-KbP" id="bom-0l-Dwr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43j-Om-yFy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="266.66666666666669" y="26.785714285714285"/>
         </scene>
+        <!--Survey Detail View Controller-->
+        <scene sceneID="Ueq-zM-iDb">
+            <objects>
+                <viewController id="kXK-rh-foI" customClass="SurveyDetailViewController" customModule="NimbleTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qyW-ua-74R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="yaP-hS-SWa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5J0-Zz-9dv" userLabel="Footer Stack View">
+                                <rect key="frame" x="16" y="117.5" width="382" height="127.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working from home Check-In" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Sg-9N-CaG">
+                                        <rect key="frame" x="0.0" y="0.0" width="290.5" height="76.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We would like to know how you feel about our work from home (WFH) experience." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qV8-o4-ay9">
+                                        <rect key="frame" x="0.0" y="86.5" width="350.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.backward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7MU-De-n1o">
+                                <rect key="frame" x="20" y="58" width="32" height="28.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpf-za-iU5">
+                                <rect key="frame" x="16" y="52" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Zhl-eW-19E"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79k-CM-6CP" customClass="DefaultButton" customModule="NimbleTestApp" customModuleProvider="target">
+                                <rect key="frame" x="274" y="777.5" width="124" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="79k-CM-6CP" secondAttribute="height" multiplier="4:1" id="EdK-K3-2Rv"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start Survey"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="t8s-7W-1ZH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5J0-Zz-9dv" firstAttribute="leading" secondItem="t8s-7W-1ZH" secondAttribute="leading" constant="16" id="0DB-zJ-Tuz"/>
+                            <constraint firstAttribute="trailing" secondItem="5J0-Zz-9dv" secondAttribute="trailing" constant="16" id="21R-nW-fDJ"/>
+                            <constraint firstItem="7MU-De-n1o" firstAttribute="centerX" secondItem="jpf-za-iU5" secondAttribute="centerX" id="35s-tV-9Xi"/>
+                            <constraint firstItem="jpf-za-iU5" firstAttribute="width" secondItem="jpf-za-iU5" secondAttribute="height" multiplier="1:1" id="Bv8-kI-rn2"/>
+                            <constraint firstItem="5J0-Zz-9dv" firstAttribute="centerY" secondItem="t8s-7W-1ZH" secondAttribute="centerY" multiplier="0.4" id="MLN-YT-pCd"/>
+                            <constraint firstItem="yaP-hS-SWa" firstAttribute="top" secondItem="qyW-ua-74R" secondAttribute="top" id="Nui-1S-c9C"/>
+                            <constraint firstItem="7MU-De-n1o" firstAttribute="height" secondItem="jpf-za-iU5" secondAttribute="height" multiplier="0.8" id="UZh-Yn-bAx"/>
+                            <constraint firstItem="yaP-hS-SWa" firstAttribute="trailing" secondItem="t8s-7W-1ZH" secondAttribute="trailing" id="Yoz-b4-xwf"/>
+                            <constraint firstAttribute="bottom" secondItem="yaP-hS-SWa" secondAttribute="bottom" id="cu8-Mu-5qz"/>
+                            <constraint firstItem="7MU-De-n1o" firstAttribute="width" secondItem="jpf-za-iU5" secondAttribute="width" multiplier="0.8" id="drB-eQ-Rnz"/>
+                            <constraint firstItem="79k-CM-6CP" firstAttribute="centerY" secondItem="t8s-7W-1ZH" secondAttribute="centerY" multiplier="1.75" id="ec0-hh-2ca"/>
+                            <constraint firstItem="jpf-za-iU5" firstAttribute="top" secondItem="t8s-7W-1ZH" secondAttribute="top" constant="8" id="gfb-Rh-7F5"/>
+                            <constraint firstItem="7MU-De-n1o" firstAttribute="centerY" secondItem="jpf-za-iU5" secondAttribute="centerY" id="jBo-CB-bmf"/>
+                            <constraint firstItem="yaP-hS-SWa" firstAttribute="leading" secondItem="t8s-7W-1ZH" secondAttribute="leading" id="r2T-ZQ-Rv9"/>
+                            <constraint firstItem="t8s-7W-1ZH" firstAttribute="trailing" secondItem="79k-CM-6CP" secondAttribute="trailing" constant="16" id="rPI-1a-iCX"/>
+                            <constraint firstItem="jpf-za-iU5" firstAttribute="leading" secondItem="t8s-7W-1ZH" secondAttribute="leading" constant="16" id="twL-xj-K9Q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJD-O5-TL1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="26.785714285714285"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="login_bg" width="375" height="812"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

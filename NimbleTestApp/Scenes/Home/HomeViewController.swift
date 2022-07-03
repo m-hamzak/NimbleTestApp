@@ -9,18 +9,24 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var welcomeLabel: UILabel!
-    
+    @IBOutlet weak var surveyCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func didTapSignout(_ sender: Any) {
-        
-        self.dismiss(animated: true)
+       
+    func setupView(){
+        registerCells()
     }
     
+    func setupData(){
+        
+    }
+    
+    private func registerCells(){
+        surveyCollectionView.register(UINib.init(nibName: "SurveyView", bundle: nil), forCellWithReuseIdentifier: "surveyCell")
+       
+    }
 
 }
