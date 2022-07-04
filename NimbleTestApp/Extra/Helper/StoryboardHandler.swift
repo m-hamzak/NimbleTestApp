@@ -10,6 +10,7 @@ import UIKit
 enum StoryboardHandler : String {
     
     case Main
+    case PreLogin
     
     
     var instance : UIStoryboard {

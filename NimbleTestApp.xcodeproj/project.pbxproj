@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		81061C762871ADC000B02084 /* SurveyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81061C752871ADC000B02084 /* SurveyDetailViewController.swift */; };
 		81061C782871ADE200B02084 /* SurveyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81061C772871ADE200B02084 /* SurveyDetailViewModel.swift */; };
+		81061C7E2871C35600B02084 /* SurveyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81061C7C2871C35600B02084 /* SurveyCollectionViewCell.swift */; };
+		81061C7F2871C35600B02084 /* SurveyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81061C7D2871C35600B02084 /* SurveyCollectionViewCell.xib */; };
 		813AE02427F4622000BC104A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE02327F4622000BC104A /* AppDelegate.swift */; };
 		813AE02627F4622000BC104A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE02527F4622000BC104A /* SceneDelegate.swift */; };
 		813AE02827F4622000BC104A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE02727F4622000BC104A /* LoginViewController.swift */; };
@@ -39,6 +41,8 @@
 		6845621E9BF9817A3353632C /* Pods-UnitTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestApp.release.xcconfig"; path = "Target Support Files/Pods-UnitTestApp/Pods-UnitTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		81061C752871ADC000B02084 /* SurveyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDetailViewController.swift; sourceTree = "<group>"; };
 		81061C772871ADE200B02084 /* SurveyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDetailViewModel.swift; sourceTree = "<group>"; };
+		81061C7C2871C35600B02084 /* SurveyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCollectionViewCell.swift; sourceTree = "<group>"; };
+		81061C7D2871C35600B02084 /* SurveyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyCollectionViewCell.xib; sourceTree = "<group>"; };
 		813AE02027F4622000BC104A /* NimbleTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimbleTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813AE02327F4622000BC104A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		813AE02527F4622000BC104A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,23 @@
 				81061C772871ADE200B02084 /* SurveyDetailViewModel.swift */,
 			);
 			path = SurveyDetail;
+			sourceTree = "<group>";
+		};
+		81061C792871C30100B02084 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				81061C802871C35B00B02084 /* SurveyCollectionViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		81061C802871C35B00B02084 /* SurveyCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				81061C7C2871C35600B02084 /* SurveyCollectionViewCell.swift */,
+				81061C7D2871C35600B02084 /* SurveyCollectionViewCell.xib */,
+			);
+			path = SurveyCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		813AE01727F4622000BC104A = {
@@ -187,6 +208,7 @@
 		813AE03D27F46A2500BC104A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				81061C792871C30100B02084 /* Cells */,
 				818A0DA5287045E200807668 /* Xibs */,
 				81B212EC286F27F1003199D3 /* Components */,
 			);
@@ -361,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81061C7F2871C35600B02084 /* SurveyCollectionViewCell.xib in Resources */,
 				818A0DA72870460300807668 /* SurveyView.xib in Resources */,
 				813AE03027F4622100BC104A /* LaunchScreen.storyboard in Resources */,
 				813AE02D27F4622100BC104A /* Assets.xcassets in Resources */,
@@ -436,6 +459,7 @@
 				813AE02627F4622000BC104A /* SceneDelegate.swift in Sources */,
 				813AE04C27F4768600BC104A /* ForgetPasswordViewController.swift in Sources */,
 				813AE04627F46B1100BC104A /* BaseViewController.swift in Sources */,
+				81061C7E2871C35600B02084 /* SurveyCollectionViewCell.swift in Sources */,
 				81B212F2286F288C003199D3 /* Palette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

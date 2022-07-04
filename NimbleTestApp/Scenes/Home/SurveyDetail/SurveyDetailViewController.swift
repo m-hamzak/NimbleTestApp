@@ -8,6 +8,11 @@
 import UIKit
 
 class SurveyDetailViewController: UIViewController {
+    
+    
+    @IBOutlet weak var surveyHeadingLabel: UILabel!
+    @IBOutlet weak var surveyDescriptionLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +21,13 @@ class SurveyDetailViewController: UIViewController {
     }
     
 
+    @IBAction func didTapBackButton(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    
+    @IBAction func didTapStartSurveyButton(_ sender: Any) {
+        
+    }
     /*
     // MARK: - Navigation
 

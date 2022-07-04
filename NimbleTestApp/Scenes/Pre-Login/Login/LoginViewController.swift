@@ -32,7 +32,8 @@ class LoginViewController: BaseViewController {
 
     @IBAction func didTapForgetPassword(_ sender: Any) {
         
-        let vc = ForgetPasswordViewController.instantiate(fromStoryboard: .Main)
+        let vc = ForgetPasswordViewController.instantiate(fromStoryboard: .PreLogin)
+        self.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true,completion: nil)
         
     }
@@ -41,7 +42,7 @@ class LoginViewController: BaseViewController {
         
         let vc = HomeViewController.instantiate(fromStoryboard: .Main)
         UIApplication.shared.delegate?.window??.rootViewController = vc
-        self.modalPresentationStyle = .overFullScreen
+        self.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
         
     }
