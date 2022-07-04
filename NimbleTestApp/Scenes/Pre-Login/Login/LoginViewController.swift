@@ -9,18 +9,31 @@ import UIKit
 
 class LoginViewController: BaseViewController {
 
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: TranslucentTextField!
+    @IBOutlet weak var passwordTextField: TranslucentTextField!
+    @IBOutlet weak var loginButton: DefaultButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupView()
+        setupData()
+    }
+    
+    func setupView(){
+        
+    }
+    
+    func setupData(){
+        
     }
     
 
     @IBAction func didTapForgetPassword(_ sender: Any) {
         
-        let vc = ForgetPasswordViewController.instantiate(fromStoryboard: .Main)
+        let vc = ForgetPasswordViewController.instantiate(fromStoryboard: .PreLogin)
+        self.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true,completion: nil)
         
     }
@@ -29,11 +42,10 @@ class LoginViewController: BaseViewController {
         
         let vc = HomeViewController.instantiate(fromStoryboard: .Main)
         UIApplication.shared.delegate?.window??.rootViewController = vc
-        self.modalPresentationStyle = .overFullScreen
+        self.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
         
     }
-    
     
 }
 

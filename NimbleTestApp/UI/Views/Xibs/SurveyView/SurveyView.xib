@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SurveyView" customModule="NimbleTestApp" customModuleProvider="target">
+            <connections>
+                <outlet property="bgImageview" destination="Adj-C6-9cr" id="m54-Ut-OIg"/>
+                <outlet property="surveyDescriptionLabel" destination="72l-pE-Lv7" id="RAr-d3-DyY"/>
+                <outlet property="surveyHeadLabel" destination="DfO-BV-J1N" id="d3z-zo-bYo"/>
+                <outlet property="surveyPageControl" destination="fQX-dt-F2x" id="MKW-mV-5bm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Adj-C6-9cr" userLabel="Background Imageview">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fa1-ie-s1U" userLabel="Footer Stack View">
+                    <rect key="frame" x="16" y="713.5" width="335.5" height="113.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working from home Check-In" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfO-BV-J1N">
+                            <rect key="frame" x="0.0" y="0.0" width="236.5" height="62.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We would like to know how you feel about our work from home..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72l-pE-Lv7">
+                            <rect key="frame" x="0.0" y="72.5" width="321" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fQX-dt-F2x">
+                    <rect key="frame" x="16" y="677.5" width="115.5" height="26"/>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="fa1-ie-s1U" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="21t-zF-rI0"/>
+                <constraint firstItem="fa1-ie-s1U" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" multiplier="1.7" id="AIY-YN-HKN"/>
+                <constraint firstItem="Adj-C6-9cr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JvZ-ct-o3x"/>
+                <constraint firstAttribute="bottom" secondItem="Adj-C6-9cr" secondAttribute="bottom" id="Kkw-Rc-xHd"/>
+                <constraint firstItem="fa1-ie-s1U" firstAttribute="top" secondItem="fQX-dt-F2x" secondAttribute="bottom" constant="10" id="ONj-CE-Nga"/>
+                <constraint firstItem="Adj-C6-9cr" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="SZw-V8-MhM"/>
+                <constraint firstItem="Adj-C6-9cr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ade-uT-DDR"/>
+                <constraint firstItem="fa1-ie-s1U" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.81" id="ekN-2v-bBz"/>
+                <constraint firstItem="fQX-dt-F2x" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="ugg-07-dxv"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_bg" width="375" height="812"/>
+    </resources>
+</document>
