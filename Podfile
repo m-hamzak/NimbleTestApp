@@ -8,4 +8,5 @@ target 'NimbleTestApp' do
   # Pods for NimbleTestApp
 
 	pod 'Alamofire'
+	pod 'ObjectMapper'
 end

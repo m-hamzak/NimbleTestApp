@@ -26,6 +26,14 @@
 		813AE05227F476E800BC104A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE05127F476E800BC104A /* HomeViewController.swift */; };
 		813AE05427F4770700BC104A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE05327F4770700BC104A /* HomeViewModel.swift */; };
 		813AE05927F48FB400BC104A /* StoryboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AE05827F48FB400BC104A /* StoryboardHandler.swift */; };
+		813B1DB328733A9D001520D5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813B1DB228733A9D001520D5 /* Request.swift */; };
+		813B1DB528733B1D001520D5 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813B1DB428733B1D001520D5 /* RequestBuilder.swift */; };
+		813B1DB728733BBB001520D5 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813B1DB628733BBB001520D5 /* RequestManager.swift */; };
+		8143634C28742DC9007EEA00 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8143634B28742DC9007EEA00 /* URLConstant.swift */; };
+		814363502874493A007EEA00 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8143634F2874493A007EEA00 /* BaseRequest.swift */; };
+		8143635228744965007EEA00 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8143635128744965007EEA00 /* BaseResponse.swift */; };
+		81436354287449AA007EEA00 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81436353287449AA007EEA00 /* LoginRequest.swift */; };
+		81436356287449F1007EEA00 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81436355287449F1007EEA00 /* LoginResponse.swift */; };
 		818A0DA72870460300807668 /* SurveyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818A0DA62870460300807668 /* SurveyView.xib */; };
 		818A0DA92870462900807668 /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A0DA82870462900807668 /* SurveyView.swift */; };
 		81B212EB286EFC19003199D3 /* PreLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B212EA286EFC19003199D3 /* PreLogin.storyboard */; };
@@ -60,6 +68,14 @@
 		813AE05127F476E800BC104A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		813AE05327F4770700BC104A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		813AE05827F48FB400BC104A /* StoryboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardHandler.swift; sourceTree = "<group>"; };
+		813B1DB228733A9D001520D5 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		813B1DB428733B1D001520D5 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		813B1DB628733BBB001520D5 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		8143634B28742DC9007EEA00 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
+		8143634F2874493A007EEA00 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		8143635128744965007EEA00 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		81436353287449AA007EEA00 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		81436355287449F1007EEA00 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		818A0DA62870460300807668 /* SurveyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyView.xib; sourceTree = "<group>"; };
 		818A0DA82870462900807668 /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
 		81B212EA286EFC19003199D3 /* PreLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PreLogin.storyboard; sourceTree = "<group>"; };
@@ -144,8 +160,8 @@
 			children = (
 				813AE03727F4690200BC104A /* Scenes */,
 				813AE03827F469D400BC104A /* UI */,
-				813AE03C27F46A0F00BC104A /* Database */,
-				813AE03B27F46A0400BC104A /* Network */,
+				813AE03C27F46A0F00BC104A /* DatabaseService */,
+				813AE03B27F46A0400BC104A /* NetworkService */,
 				813AE03A27F469FE00BC104A /* Model */,
 				81B212EF286F2856003199D3 /* Extra */,
 				813AE02C27F4622100BC104A /* Assets.xcassets */,
@@ -191,18 +207,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		813AE03B27F46A0400BC104A /* Network */ = {
+		813AE03B27F46A0400BC104A /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				813B1DB228733A9D001520D5 /* Request.swift */,
+				813B1DB428733B1D001520D5 /* RequestBuilder.swift */,
+				813B1DB628733BBB001520D5 /* RequestManager.swift */,
+				8143634A28742DAE007EEA00 /* Extra */,
+				8143634E28744839007EEA00 /* Response */,
+				8143634D28744831007EEA00 /* Request */,
 			);
-			path = Network;
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
-		813AE03C27F46A0F00BC104A /* Database */ = {
+		813AE03C27F46A0F00BC104A /* DatabaseService */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Database;
+			path = DatabaseService;
 			sourceTree = "<group>";
 		};
 		813AE03D27F46A2500BC104A /* Views */ = {
@@ -270,6 +292,32 @@
 				81061C742871AD8700B02084 /* SurveyDetail */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		8143634A28742DAE007EEA00 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				8143634B28742DC9007EEA00 /* URLConstant.swift */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		8143634D28744831007EEA00 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				8143634F2874493A007EEA00 /* BaseRequest.swift */,
+				81436353287449AA007EEA00 /* LoginRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		8143634E28744839007EEA00 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				8143635128744965007EEA00 /* BaseResponse.swift */,
+				81436355287449F1007EEA00 /* LoginResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		818A0DA5287045E200807668 /* Xibs */ = {
@@ -441,14 +489,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81436354287449AA007EEA00 /* LoginRequest.swift in Sources */,
 				813AE04127F46AB200BC104A /* LoginViewModel.swift in Sources */,
 				81B212F6286F3445003199D3 /* TranslucentTextField.swift in Sources */,
 				813AE05927F48FB400BC104A /* StoryboardHandler.swift in Sources */,
 				81B212EE286F280A003199D3 /* DefaultButton.swift in Sources */,
+				813B1DB328733A9D001520D5 /* Request.swift in Sources */,
+				81436356287449F1007EEA00 /* LoginResponse.swift in Sources */,
 				813AE05427F4770700BC104A /* HomeViewModel.swift in Sources */,
 				813AE04F27F476C100BC104A /* ForgetPasswordViewModel.swift in Sources */,
+				813B1DB528733B1D001520D5 /* RequestBuilder.swift in Sources */,
 				818A0DA92870462900807668 /* SurveyView.swift in Sources */,
 				81B212F4286F2913003199D3 /* Constants.swift in Sources */,
+				814363502874493A007EEA00 /* BaseRequest.swift in Sources */,
 				813AE04827F46F7500BC104A /* BaseNavigationController.swift in Sources */,
 				813AE04427F46AEA00BC104A /* BaseViewModel.swift in Sources */,
 				813AE02827F4622000BC104A /* LoginViewController.swift in Sources */,
@@ -456,11 +509,14 @@
 				81061C762871ADC000B02084 /* SurveyDetailViewController.swift in Sources */,
 				813AE02427F4622000BC104A /* AppDelegate.swift in Sources */,
 				81061C782871ADE200B02084 /* SurveyDetailViewModel.swift in Sources */,
+				8143634C28742DC9007EEA00 /* URLConstant.swift in Sources */,
 				813AE02627F4622000BC104A /* SceneDelegate.swift in Sources */,
 				813AE04C27F4768600BC104A /* ForgetPasswordViewController.swift in Sources */,
 				813AE04627F46B1100BC104A /* BaseViewController.swift in Sources */,
 				81061C7E2871C35600B02084 /* SurveyCollectionViewCell.swift in Sources */,
 				81B212F2286F288C003199D3 /* Palette.swift in Sources */,
+				813B1DB728733BBB001520D5 /* RequestManager.swift in Sources */,
+				8143635228744965007EEA00 /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
