@@ -10,8 +10,7 @@ import ObjectMapper
 
 class LoginResponse: BaseResponse {
     
-    var id: String?
-    var type: String?
+
     var token: String?
     var access_token: String?
     var token_type: String?
@@ -26,8 +25,6 @@ class LoginResponse: BaseResponse {
     override func mapping(map: Map) {
         super.mapping(map: map)
         
-        id              <- map["id"]
-        type              <- map["type"]
         token              <- map["attributes.token"]
         access_token             <- map["attributes.access_token"]
         token_type              <- map["attributes.token_type"]

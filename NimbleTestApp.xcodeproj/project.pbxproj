@@ -34,6 +34,7 @@
 		8143635228744965007EEA00 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8143635128744965007EEA00 /* BaseResponse.swift */; };
 		81436354287449AA007EEA00 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81436353287449AA007EEA00 /* LoginRequest.swift */; };
 		81436356287449F1007EEA00 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81436355287449F1007EEA00 /* LoginResponse.swift */; };
+		818763B1287464EA00B9B1AE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818763B0287464EA00B9B1AE /* NetworkService.swift */; };
 		818A0DA72870460300807668 /* SurveyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 818A0DA62870460300807668 /* SurveyView.xib */; };
 		818A0DA92870462900807668 /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A0DA82870462900807668 /* SurveyView.swift */; };
 		81B212EB286EFC19003199D3 /* PreLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B212EA286EFC19003199D3 /* PreLogin.storyboard */; };
@@ -76,6 +77,7 @@
 		8143635128744965007EEA00 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		81436353287449AA007EEA00 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		81436355287449F1007EEA00 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		818763B0287464EA00B9B1AE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		818A0DA62870460300807668 /* SurveyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyView.xib; sourceTree = "<group>"; };
 		818A0DA82870462900807668 /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
 		81B212EA286EFC19003199D3 /* PreLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PreLogin.storyboard; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				813B1DB228733A9D001520D5 /* Request.swift */,
 				813B1DB428733B1D001520D5 /* RequestBuilder.swift */,
 				813B1DB628733BBB001520D5 /* RequestManager.swift */,
+				818763B0287464EA00B9B1AE /* NetworkService.swift */,
 				8143634A28742DAE007EEA00 /* Extra */,
 				8143634E28744839007EEA00 /* Response */,
 				8143634D28744831007EEA00 /* Request */,
@@ -382,7 +385,7 @@
 				813AE01C27F4622000BC104A /* Sources */,
 				813AE01D27F4622000BC104A /* Frameworks */,
 				813AE01E27F4622000BC104A /* Resources */,
-				1E6985D19004404FF5C60AF3 /* [CP] Embed Pods Frameworks */,
+				54BF4E3F40846DB502B48C38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -443,7 +446,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E6985D19004404FF5C60AF3 /* [CP] Embed Pods Frameworks */ = {
+		54BF4E3F40846DB502B48C38 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -515,6 +518,7 @@
 				813AE04627F46B1100BC104A /* BaseViewController.swift in Sources */,
 				81061C7E2871C35600B02084 /* SurveyCollectionViewCell.swift in Sources */,
 				81B212F2286F288C003199D3 /* Palette.swift in Sources */,
+				818763B1287464EA00B9B1AE /* NetworkService.swift in Sources */,
 				813B1DB728733BBB001520D5 /* RequestManager.swift in Sources */,
 				8143635228744965007EEA00 /* BaseResponse.swift in Sources */,
 			);

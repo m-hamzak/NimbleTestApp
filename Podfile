@@ -9,4 +9,5 @@ target 'NimbleTestApp' do
 
 	pod 'Alamofire'
 	pod 'ObjectMapper'
+  pod 'AlamofireObjectMapper'
 end

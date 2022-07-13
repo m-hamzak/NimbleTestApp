@@ -40,11 +40,45 @@ class LoginViewController: BaseViewController {
     
     @IBAction func didTapLogin(_ sender: Any) {
         
-        let vc = HomeViewController.instantiate(fromStoryboard: .Main)
-        UIApplication.shared.delegate?.window??.rootViewController = vc
-        self.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
+//        let vc = HomeViewController.instantiate(fromStoryboard: .Main)
+//        UIApplication.shared.delegate?.window??.rootViewController = vc
+//        self.modalPresentationStyle = .fullScreen
+//        self.present(vc, animated: true, completion: nil)
+        mainLogin()
+    }
+    
+    func mainLogin(){
         
+        loginCustomer { loginResponse in
+            print(loginResponse)
+        }
+    }
+    
+    func loginCustomer( callBack : @escaping ((_ loginResponse: LoginResponse?) -> Void) ){
+        
+        let loginRequest = LoginRequest.init(grant_type: "password",
+                                             email: "dev@nimblehq.co",
+                                             password: "12345678",
+                                             client_id: "ofzl-2h5ympKa0WqqTzqlVJUiRsxmXQmt5tkgrlWnOE",
+                                             client_secret: "lMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU")
+       
+        
+        NetworkService.login(loginRequest) { (result) in
+            switch result{
+            case .success(let response):
+                
+//                guard response.code == 1 else{
+//                    callBack(response)
+//                    return
+//                }
+                
+                callBack(response)
+            
+            case .failure(let error):
+                print(error)
+                callBack(nil)
+            }
+        }
     }
     
 }
